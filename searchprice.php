@@ -21,7 +21,7 @@ require_once('config.php');
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
                             <a class="nav-link active" href="dashboard.php">Dashboard
-                                <span class="visually-hidden">(current)</span>
+                                <span class="visually-hidden"></span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -31,13 +31,16 @@ require_once('config.php');
                             <a class="nav-link" href="searchprice.php">Search Price</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="post.php">Post</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="profile.php">Profile</a>
                         </li>
                     </div>
              </div>
         </nav>
             <div class="jumbotron bg-white">
-                <p class="lead">Search by Location<p>
+                <p class="lead">Search by Price<p>
                 <hr class="my-4">
                 <form method="GET" action="searchprice.php">
                     <div class="form-group">
@@ -119,7 +122,7 @@ require_once('config.php');
                         while($row = mysqli_fetch_assoc($result))
                         {
                 ?>
-                <tr>
+                <tr onclick="location.href='rental.php?id=<?php echo $row['id'] ?>';">
                     <td><?php echo $row['title'] ?></td>
                     <td><?php echo $row['description'] ?></td>
                     <td><?php echo $row['address'] ?></td>
@@ -138,7 +141,6 @@ require_once('config.php');
             }
                 ?>
             </table>
-            </form>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

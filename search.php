@@ -21,7 +21,7 @@ require_once('config.php');
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
                             <a class="nav-link active" href="dashboard.php">Dashboard
-                                <span class="visually-hidden">(current)</span>
+                                <span class="visually-hidden"></span>
                             </a>
                         </li>
                         <li class="nav-item active">
@@ -29,6 +29,9 @@ require_once('config.php');
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="searchprice.php">Search Price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="post.php">Post</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="profile.php">Profile</a>
@@ -135,7 +138,7 @@ require_once('config.php');
                         while($row = mysqli_fetch_assoc($result))
                         {
                 ?>
-                <tr>
+                <tr onclick="location.href='rental.php?id=<?php echo $row['id'] ?>';">
                     <td><?php echo $row['title'] ?></td>
                     <td><?php echo $row['description'] ?></td>
                     <td><?php echo $row['address'] ?></td>

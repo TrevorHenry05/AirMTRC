@@ -21,7 +21,7 @@ session_start();
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
                             <a class="nav-link active" href="dashboard.php">Dashboard
-                                <span class="visually-hidden">(current)</span>
+                                <span class="visually-hidden"></span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -31,9 +31,12 @@ session_start();
                             <a class="nav-link" href="searchprice.php">Search Price</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="post.php">Post</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="profile.php">Profile</a>
                         </li>
-                    </div>
+                </div>
              </div>
         </nav>
         <div class="jumbotron">
