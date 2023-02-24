@@ -78,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt->bind_param("iis", $rental_id, $amount, $due_date);
 
         $stmt->execute();
-
+        header("Location: search.php");
     } else {
         // Handle the case where the query failed or did not return any results
         echo "Error: Unable to retrieve renter ID.";
