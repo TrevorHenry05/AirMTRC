@@ -20,6 +20,11 @@ Upon clicking the "Search Price" link in the navigation bar, you will be directe
 After clicking on the "Profile" link in the navigation bar, you will be directed to a page displaying the current user's name and email at the top. The page will also feature two buttons: "User Rentals" and "User Properties". Clicking on "User Rentals" will display a table of all rentals made by the current user, while clicking on "User Properties" will show a list of properties posted by the user.
 ![GitHub Logo](/images/profile.PNG)
 
+After navigating to the "Post" link in the navigation bar, you will be redirected to a user-friendly form where you can easily fill out all the necessary details of your property. Our platform ensures that the form is intuitive and easy to use, so you can quickly and accurately post your property without any hassle.
+
+Once you have filled out all the required fields, you can confidently hit the "submit" button, and our platform will automatically process your submission. The property will be hosted by the current user logged in.
+![GitHub Logo](/images/post.PNG)
+
 
 
 
