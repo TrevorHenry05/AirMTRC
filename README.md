@@ -2,7 +2,7 @@
 A web interface to interact with a property rental database that stores users, properties , and rentals.
 ![GitHub Logo](/images/airmtrc.PNG) 
 
-Deployed on the Google Cloud Platform using a virtual machine **Lamp packaged by Bitnami**. Database was deployed using phpmyadmin and web interface deployed using ICEcoder on the virtual machine.
+Deployed on the Google Cloud Platform using a virtual machine **Lamp packaged by Bitnami**. Database was deployed using phpmyadmin and web interface deployed using ICEcoder on the virtual machine, you can access the login page by right clicking the index.php file and clicking view webpage.
 
 The login screen allows already registered users to login, while the registration page enables new users to sign up for an account. After successfully logging in, you will be directed to the Dashboard, which is the main page of our project.
 ![GitHub Logo](/images/index.PNG)
